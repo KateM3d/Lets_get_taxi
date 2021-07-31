@@ -1,0 +1,75 @@
+body {
+    background-image: url(img/bkgr.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: brown;
+}
+
+h1 {
+    text-align: center;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 60px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: burlywood;
+    background-position: center;
+    border: 2px solid white;
+    border-radius: 20px;
+    opacity: 0.8;
+    height: 60vh;
+    margin: auto;
+    width: 70vw;
+}
+
+p {
+    color: #4A2C2C;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+span {
+    color: #4A2C2C;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+}
+
+#billSplit,
+#totalTip,
+#totalAmount {
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: white;
+    margin: 10px;
+    padding: 5px;
+}
+
+#addTip {
+    width: 250px;
+}
+
+.button {
+    align-self: center;
+}
+
+#btn {
+    padding: 45px 30px;
+    border-radius: 50%;
+    border: none;
+    color: #fff;
+    opacity: 4;
+}
+
+#btn:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: 1s ease-in;
+}
