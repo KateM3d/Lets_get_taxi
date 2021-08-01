@@ -20,18 +20,18 @@
             <form>
                 <p>Bill💵</p>
                 <span>$
-            <input type="text" placeholder="Total"></span>
+            <input id="bill" type="text" placeholder="Bill"></span>
                 <p>Number of passengers🧑‍🤝‍🧑</p><span>
-            <input type="text" id="passangers" placeholder="How many passengers"></span>
+            <input type="text" id="passengers" placeholder="How many passengers"></span>
                 <p>Did you like our service?🚖</p>
 
                 <button id="addTip">Tip🤍</button>
                 <br>
                 <select id="tip">
         <option disabled>Select and option</option>
-        <option value="0.00" selected>No tip🚕</option>
+        <option value="0.00" selected >No tip🚕</option>
         <option value="0.10">10%🚕</option>
-        <option value="0.15">15%🚕</option>
+        <option value="0.15" >15%🚕</option>
         <option value="0.20">20%🚕</option>
             </select>
 
@@ -44,25 +44,29 @@
         </div>
 
         <div class="right " id="showTotalAmount ">
-            <div id="billSplit ">
+            <div id="billSplit">
                 <p>Bill</p>
                 <span>$</span>
+                <span id="divBill"></span>
                 <span>per person</span>
             </div>
-            <div id="totalTip ">
+            <div id="totalTip">
                 <p>Tips</p>
                 <span>$</span>
+                <span id="divTip"></span>
                 <span>per person</span>
             </div>
-            <div id="totalAmount ">
+            <div id="totalAmount">
                 <p>Total</p>
                 <span>$</span>
+                <span id="divTotal"></span>
                 <span>per person</span>
             </div>
 
 
         </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     <script src="script.js "></script>
 </body>
