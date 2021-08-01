@@ -23,9 +23,9 @@ h1 {
     border: 2px solid white;
     border-radius: 20px;
     opacity: 0.8;
-    height: 60vh;
     margin: auto;
     width: 70vw;
+    padding: 20px;
 }
 
 p {
@@ -35,7 +35,9 @@ p {
     font-weight: 800;
 }
 
-span {
+span,
+select,
+option {
     color: #4A2C2C;
     font-family: 'Poppins', sans-serif;
     font-size: 15px;
@@ -45,7 +47,7 @@ span {
 #totalTip,
 #totalAmount {
     text-align: center;
-    border: 1px solid white;
+    border: 2px solid white;
     border-radius: 10px;
     background-color: white;
     margin: 10px;
@@ -65,11 +67,73 @@ span {
     border-radius: 50%;
     border: none;
     color: #fff;
-    opacity: 4;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    background-color: brown;
 }
 
 #btn:hover {
     cursor: pointer;
     transform: scale(1.2);
     transition: 1s ease-in;
+}
+
+input {
+    height: 20px;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    color: #4A2C2C;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+}
+
+#addTip {
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    background-color: #7D5E3F;
+    margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+}
+
+#addTip:hover {
+    cursor: pointer;
+}
+
+select {
+    height: 40px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+#tip {
+    display: none;
+}
+
+@media all and (max-width: 500px) {
+    #btn {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    p {
+        font-size: 15px;
+        font-weight: 800;
+    }
+    span,
+    select,
+    option {
+        font-size: 10px;
+    }
+    #addTip {
+        width: 200px;
+    }
+    .container {
+        text-align: center;
+    }
+    input {
+        width: 150px;
+    }
 }
